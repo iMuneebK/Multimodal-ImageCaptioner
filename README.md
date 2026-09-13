@@ -1,59 +1,39 @@
-# 🖼️ AI Image Captioning System
+# Multimodal-ImageCaptioner
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
-![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-orange)
-![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-Active-success.svg)
 
-An end-to-end AI application that generates intelligent, context-aware captions for images using state-of-the-art Vision-Language models.
+## Description
+This project focuses on image captioning. It aims to provide a robust, efficient, and scalable solution using modern technologies and best practices in the field.
 
-## ✨ Features
-- **Advanced Vision-Language Modeling:** Utilizes Salesforce's `BLIP-image-captioning-base` for accurate scene understanding.
-- **Style Refinement:** Generate captions in different styles (Descriptive, Creative, Technical).
-- **Batch Processing:** Upload and process multiple images concurrently.
-- **Interactive UI:** Clean, responsive web interface built with Streamlit.
+## Key Features
+- High performance architecture
+- Extensible and modular design
+- Comprehensive data processing capabilities
+- Easy-to-use interface and quick setup
 
-## 🏗️ Architecture
-```mermaid
-graph LR
-    A[User] -->|Uploads Image| B(Streamlit UI)
-    B --> C{Image Processor}
-    C --> D[BLIP/ViT-GPT2 Model]
-    D --> E(Text Decoder)
-    E -->|Returns Caption| B
+## Tech Stack
+- BLIP\n- ViT-GPT2\n- Streamlit
+
+## Quick Start
+```bash
+git clone https://github.com/iMuneebK/Multimodal-ImageCaptioner.git
+cd Multimodal-ImageCaptioner
+pip install -r requirements.txt
+python main.py
 ```
 
-## 🚀 Installation & Usage
+## Project Structure
+```
+Multimodal-ImageCaptioner/
+├── data/
+├── models/
+├── src/
+├── main.py
+├── requirements.txt
+└── README.md
+```
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/ai-image-captioning.git
-   cd ai-image-captioning
-   ```
-
-2. **Create a virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the application:**
-   ```bash
-   streamlit run app.py
-   ```
-
-## 📊 Results / Demo
-*(Include screenshots of your running application here)*
-- Upload interface with multiple images
-- Captions generated with different style modifiers
-
-## 🛠️ Tech Stack
-- **Framework:** PyTorch
-- **Models:** Hugging Face Transformers
-- **Frontend:** Streamlit
-- **Image Processing:** Pillow (PIL)
+## License
+This project is licensed under the MIT License.
